@@ -1,8 +1,13 @@
 {
   "name": "ui5-i18n-plugin",
-  "publisher": "mdp",
+  "publisher": "MDP",
   "keywords": [
-    "theia-plugin"
+    "theia-plugin",
+    "fiori",
+    "sap-business-application-studio",
+    "ui5",
+    "internationalization",
+    "i18n"
   ],
   "version": "0.0.1",
   "license": "MIT",
