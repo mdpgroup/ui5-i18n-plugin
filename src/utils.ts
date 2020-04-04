@@ -48,14 +48,15 @@ var ELEMENT_NODE = NodeType.ELEMENT_NODE = 1;
 // var NOTATION_NODE = NodeType.NOTATION_NODE = 12;
 
 export function readI18nUsageFromXML(file_content: string, file_path: any) {
-
+    // return new Promise<any[]>((resolve, reject) => {
 
     var doc = new xmldom.DOMParser().parseFromString(file_content);
     var docEl = doc.documentElement;
     var arr: any[] = [];
     getI18nUsageInXMLRecursive(arr, file_path, docEl)
     return arr;
-
+    // resolve(arr);
+    // })
 
 }
 
