@@ -18,8 +18,8 @@ export function start(context: theia.PluginContext) {
         }
         theia.window.showInformationMessage("i18n check is running...");
 
-        let propertyFilesP = theia.workspace.findFiles('{**/i18n*.properties}');
-        let xmlviewFilesP = theia.workspace.findFiles('{**/*.view.xml}');
+        let propertyFilesP = theia.workspace.findFiles('{**/i18n*.properties}', '**/node_modules/**');
+        let xmlviewFilesP = theia.workspace.findFiles('{**/*.view.xml}', '**/node_modules/**');
         let [propertyFiles, xmlviewFiles] = await Promise.all([propertyFilesP, xmlviewFilesP]);
 
         //Start all the async work concurrently
@@ -90,7 +90,7 @@ export function start(context: theia.PluginContext) {
 
 
         // theia.window.showInformationMessage(JSON.stringify(files));
-        theia.window.showInformationMessage(JSON.stringify(xmlviewFiles[0]))
+        // theia.window.showInformationMessage(JSON.stringify(xmlviewFiles[0]))
 
 
         // let content = await readFile(xmlviewFiles[0].path, "utf-8")
