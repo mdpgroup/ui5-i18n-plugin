@@ -3,21 +3,27 @@
 	"displayName": "ui5-i18n-plugin",
 	"description": "Check your UI5 project for missing translations!",
 	"version": "0.0.1",
+	"publisher": "fatihpense",
 	"engines": {
 		"vscode": "^1.44.0"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mdpgroup/ui5-i18n-plugin"
+	},
 	"categories": [
+		"Linters",
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:ui5-i18n-plugin.helloWorld"
+		"onCommand:ui5-i18n-plugin.check-translations"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "ui5-i18n-plugin.helloWorld",
-				"title": "Hello World"
+				"command": "ui5-i18n-plugin.check-translations",
+				"title": "Check i18n Translations"
 			}
 		]
 	},
@@ -41,5 +47,8 @@
 		"mocha": "^7.1.1",
 		"typescript": "^3.8.3",
 		"vscode-test": "^1.3.0"
+	},
+	"dependencies": {
+		"xmldom": "^0.3.0"
 	}
 }
