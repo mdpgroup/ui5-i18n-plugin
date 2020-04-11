@@ -25,7 +25,7 @@ export function activate(context: vscode.ExtensionContext) {
 		if (!vscode.workspace.workspaceFolders) {
 			return vscode.window.showInformationMessage('No folder or workspace opened!');
 		}
-		vscode.window.showInformationMessage("i18n check is running...");
+		vscode.window.setStatusBarMessage("i18n check is running...",3000);
 
 		let propertyFilesP = vscode.workspace.findFiles('{**/i18n*.properties}', '**/node_modules/**');
 		let xmlviewFilesP = vscode.workspace.findFiles('{**/*.view.xml}', '**/node_modules/**');

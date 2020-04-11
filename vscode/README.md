@@ -12,6 +12,11 @@ You will get a nice report that compares and cross-checks i18.properties files a
 
 ## Release Notes
 
+### 0.0.4
+
+Use status bar instead of message.
+Add an extension icon.
+
 ### 0.0.1
 
 Initial release of the extension.

@@ -2,7 +2,7 @@
 	"name": "ui5-i18n-plugin",
 	"displayName": "UI5 i18n Check",
 	"description": "Check your UI5 project for missing translations!",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publisher": "fatihpense",
 	"engines": {
 		"vscode": "^1.44.0"
@@ -12,9 +12,18 @@
 		"url": "https://github.com/mdpgroup/ui5-i18n-plugin"
 	},
 	"icon": "images/icon.png",
+	"license": "MIT",
 	"categories": [
 		"Other"
 	],
+	"keywords": [
+		"openui5",
+		"fiori",
+		"sap",
+		"ui5",
+		"internationalization",
+		"i18n"
+	  ],
 	"activationEvents": [
 		"onCommand:ui5-i18n-plugin.check-translations"
 	],
