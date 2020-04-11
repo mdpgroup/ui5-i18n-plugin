@@ -1,8 +1,8 @@
 {
 	"name": "ui5-i18n-plugin",
-	"displayName": "ui5-i18n-plugin",
+	"displayName": "UI5 i18n Check",
 	"description": "Check your UI5 project for missing translations!",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"publisher": "fatihpense",
 	"engines": {
 		"vscode": "^1.44.0"
@@ -11,8 +11,8 @@
 		"type": "git",
 		"url": "https://github.com/mdpgroup/ui5-i18n-plugin"
 	},
+	"icon": "images/icon.png",
 	"categories": [
-		"Linters",
 		"Other"
 	],
 	"activationEvents": [
