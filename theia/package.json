@@ -39,6 +39,6 @@
     "backend": "lib/ui5-i18n-plugin-backend.js"
   },
   "dependencies": {
-    "xmldom": "^0.3.0"
+    "xmldom": "^0.5.0"
   }
 }
